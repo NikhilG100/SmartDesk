@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/backgroundphoto"
+    tools:context="com.cubic.smartdesk.VisitorActivity">
+
+    <RelativeLayout
+        android:layout_width="700dp"
+        android:layout_height="500dp"
+        android:theme="@style/Theme.Transparent"
+        android:background="@color/colorbg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewHello"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Who Are You Visiting Today?"
+        android:id="@+id/textViewWho"
+        android:layout_above="@+id/editText"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_above="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="What is your purpose of visit?"
+        android:id="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+       />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Meeting"
+            android:id="@+id/buttonMeeting"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_below="@+id/textView2"
+            android:layout_toLeftOf="@+id/buttonSales"
+            android:layout_toStartOf="@+id/buttonSales" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Sales"
+            android:id="@+id/buttonSales"
+            android:layout_above="@+id/buttonDelivery"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Personal Visit"
+            android:id="@+id/buttonPersonalVisit"
+            android:layout_above="@+id/buttonDelivery"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/buttonSales"
+            android:layout_toEndOf="@+id/buttonSales" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Delivery"
+            android:id="@+id/buttonDelivery"
+            android:layout_below="@+id/buttonMeeting"
+            android:layout_alignLeft="@+id/buttonMeeting"
+            android:layout_alignStart="@+id/buttonMeeting"
+            android:layout_marginTop="42dp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Interview"
+            android:id="@+id/buttonInterview"
+            android:layout_alignTop="@+id/buttonDelivery"
+            android:layout_toRightOf="@+id/buttonMeeting"
+            android:layout_toEndOf="@+id/buttonMeeting" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:id="@+id/buttonOther"
+            android:layout_alignTop="@+id/buttonInterview"
+            android:layout_toRightOf="@+id/editText"
+            android:layout_toEndOf="@+id/editText" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
